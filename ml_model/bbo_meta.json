@@ -1,0 +1,52 @@
+{
+  "trained_at": "2025-11-26T08:00:48.042865Z",
+  "target_precision": 0.75,
+  "models": [
+    {
+      "side": "Long",
+      "features": [
+        "Rsi",
+        "Rvol",
+        "Atr",
+        "SpreadFraction",
+        "QueueImbalance",
+        "MicroPrice",
+        "SignedSpread",
+        "EmaShort",
+        "EmaMid"
+      ],
+      "onnx": "artifacts\\\\bbo_long.onnx",
+      "calibration": {
+        "A": 6.013594652346352,
+        "B": -3.65688449028937,
+        "type": "platt_prob_on_proba"
+      },
+      "threshold": 0.6486787744250027,
+      "val_target_precision": 0.7507692307692307,
+      "test_precision_at_threshold": 0.31887755102040816
+    },
+    {
+      "side": "Short",
+      "features": [
+        "Rsi",
+        "Rvol",
+        "Atr",
+        "SpreadFraction",
+        "QueueImbalance",
+        "MicroPrice",
+        "SignedSpread",
+        "EmaShort",
+        "EmaMid"
+      ],
+      "onnx": "artifacts\\\\bbo_short.onnx",
+      "calibration": {
+        "A": 5.431956244652186,
+        "B": -3.523114235733674,
+        "type": "platt_prob_on_proba"
+      },
+      "threshold": 0.780617286405153,
+      "val_target_precision": 0.75,
+      "test_precision_at_threshold": 0.24761904761904763
+    }
+  ]
+}

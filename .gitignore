@@ -1,0 +1,34 @@
+# --- Virtual environments ---
+/bbo_training_pipeline/
+/venv/
+/.venv/
+/env/
+
+# --- PyCharm / IDE files ---
+/.idea/
+
+# --- Python cache / compiled ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Build / dist ---
+build/
+dist/
+*.egg-info/
+
+# --- Test / tooling caches ---
+/.pytest_cache/
+/.mypy_cache/
+/.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+
+# --- Large local data & artifacts (adjust as needed) ---
+/data/
+/artifacts/
+/ModelArtifacts/
+/ml_artifacts/
+/outputs/
